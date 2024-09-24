@@ -88,7 +88,7 @@ class TestAssignmentTwo(unittest.TestCase):
         self.assertEqual(asgmt.remove_duplicates([7, 7, 8, 8]), [7, 8])
         self.assertEqual(asgmt.remove_duplicates([2, 7, 7, 2]), [2, 7])
 
-asgmt = importlib.import_module("asgmt-answer")
+asgmt = importlib.import_module("asgmt")
 suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentTwo)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
