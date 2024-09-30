@@ -40,18 +40,18 @@ class TestAssignmentTwo(unittest.TestCase):
                          [11, 7, 5, 3, 2])
         self.assertEqual(asgmt.sort_list_with_descending_order([2, 3, 5, 7, 11]),
                          [11, 7, 5, 3, 2])
-    def test_05_retrieve_the_first_three_characters(self):
-        self.assertEqual(asgmt.retrieve_the_first_three_characters("Python"), "Pyt")
-        self.assertEqual(asgmt.retrieve_the_first_three_characters("Reticulate"), "Ret")
-        self.assertEqual(asgmt.retrieve_the_first_three_characters("Anaconda"), "Ana")
-        self.assertEqual(asgmt.retrieve_the_first_three_characters("Skywalker"), "Sky")
-        self.assertEqual(asgmt.retrieve_the_first_three_characters("Anakin"), "Ana")
-    def test_06_remove_the_first_and_last_element(self):
+    def test_05_remove_the_first_and_last_element(self):
         self.assertEqual(asgmt.remove_the_first_and_last_element([2, 3, 5, 7, 11]), [3, 5, 7])
         self.assertEqual(asgmt.remove_the_first_and_last_element(["Python", "Reticulate", "Anaconda"]), ["Reticulate"])
         self.assertEqual(asgmt.remove_the_first_and_last_element([2, 3, 5]), [3])
         self.assertEqual(asgmt.remove_the_first_and_last_element(["Python", "Reticulate", "Anaconda"]), ["Reticulate"])
         self.assertEqual(asgmt.remove_the_first_and_last_element([2, 3, 5, 7, 11]), [3, 5, 7])
+    def test_06_retrieve_the_first_three_characters(self):
+        self.assertEqual(asgmt.retrieve_the_first_three_characters("Python"), "Pyt")
+        self.assertEqual(asgmt.retrieve_the_first_three_characters("Reticulate"), "Ret")
+        self.assertEqual(asgmt.retrieve_the_first_three_characters("Anaconda"), "Ana")
+        self.assertEqual(asgmt.retrieve_the_first_three_characters("Skywalker"), "Sky")
+        self.assertEqual(asgmt.retrieve_the_first_three_characters("Anakin"), "Ana")
     def test_07_convert_weekday_to_integer(self):
         self.assertEqual(asgmt.convert_weekday_to_integer("Sunday"), 0)
         self.assertEqual(asgmt.convert_weekday_to_integer("Monday"), 1)
